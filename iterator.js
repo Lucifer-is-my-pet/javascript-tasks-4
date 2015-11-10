@@ -68,6 +68,8 @@ module.exports.get = function (collection, startPoint, depth) {
                     }
                     this.iterationIndex += 1;
                 }
+            } else {
+                return null;
             }
             if (this.iterationIndex >= list.length) {
                 return null;
